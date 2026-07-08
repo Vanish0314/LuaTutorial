@@ -2,6 +2,14 @@
 --------------------------------------------------------------------------------
 Copyright (c) 2025 Vanishing Games. All Rights Reserved.
 Author: VanishXiao
+Date: 2026-07-07 19:42:34
+LastEditTime: 2026-07-08 18:09:26
+--------------------------------------------------------------------------------
+--]]
+--[[
+--------------------------------------------------------------------------------
+Copyright (c) 2025 Vanishing Games. All Rights Reserved.
+Author: VanishXiao
 Date: 2026-07-07 15:42:05
 LastEditTime: 2026-07-07 17:34:16
 --------------------------------------------------------------------------------
@@ -44,3 +52,10 @@ print("table项数不计算自定义索引,为:"..#arrWithCustomIndex)
 for i = 1, #arrWithCustomIndex do
     print(arrWithCustomIndex[i])
 end
+
+--[[
+Lua中, table 是引用类型
+但是会自动识别所有资源的引用情况
+只有当资源没有任何引用后
+才会在某次gc中被清理
+]]
